@@ -46,6 +46,109 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.38;b
 .detail{position:absolute;inset:0;z-index:50;display:none;align-items:center;justify-content:center;background:rgba(255,255,255,.72);backdrop-filter:blur(5px)}.detail.show{display:flex}
 .detail-card{width:840px;height:480px;border-radius:28px;overflow:hidden;background:#fff;display:grid;grid-template-columns:54% 46%;box-shadow:0 28px 80px rgba(30,70,100,.22)}.detail-card img{width:100%;height:100%;object-fit:cover}.detail-text{padding:42px;display:flex;flex-direction:column;justify-content:center}.detail-k{color:#1b74d2;font-weight:950;letter-spacing:.12em;margin-bottom:14px}.detail-title{font-size:40px;line-height:1.15;color:#123;font-weight:950;margin-bottom:18px}.detail-desc{font-size:19px;line-height:1.75;color:#345;font-weight:850}.close{position:absolute;right:30px;top:28px;border:none;border-radius:999px;background:#08336f;color:#fff;padding:12px 18px;font-weight:950}
 .menu-link{position:absolute;left:14px;bottom:12px;z-index:20;text-decoration:none;background:rgba(255,255,255,.88);color:#08336f;border:2px solid rgba(13,47,104,.12);padding:9px 14px;border-radius:999px;font-weight:950;font-size:13px}
+
+/* =========================================================
+   LAYOUT FIX 2026-06-24
+   上の余白を詰める／写真を画面内に収める／完了メッセージを非表示
+   ========================================================= */
+.header{
+  left:42px !important;
+  top:22px !important;
+}
+.header h1{
+  font-size:48px !important;
+  letter-spacing:.045em !important;
+}
+.header p{
+  margin-top:8px !important;
+  font-size:21px !important;
+}
+.hint{
+  right:48px !important;
+  top:28px !important;
+  padding:13px 24px !important;
+  font-size:16px !important;
+}
+.course-map{
+  left:42px !important;
+  right:42px !important;
+  top:112px !important;
+  height:118px !important;
+  grid-template-columns:1.05fr 1.05fr 2.05fr .9fr .85fr !important;
+  gap:10px !important;
+}
+.major{
+  height:58px !important;
+  font-size:21px !important;
+  line-height:1.2 !important;
+}
+.sub{
+  height:46px !important;
+  font-size:14px !important;
+  line-height:1.22 !important;
+}
+.s1,.s2,.s3,.s4,.s5,.s6,.s7{
+  margin-top:70px !important;
+}
+.gallery{
+  left:34px !important;
+  right:34px !important;
+  top:242px !important;
+  bottom:44px !important;
+  display:grid !important;
+  grid-template-columns:repeat(16,1fr) !important;
+  grid-auto-rows:48px !important;
+  grid-auto-flow:dense !important;
+  gap:6px !important;
+}
+.photo-tile{
+  border-width:3px !important;
+  border-radius:11px !important;
+  box-shadow:0 7px 16px rgba(31,75,112,.15) !important;
+}
+.photo-tile.large{
+  grid-column:span 3 !important;
+  grid-row:span 2 !important;
+}
+.photo-tile.wide{
+  grid-column:span 3 !important;
+  grid-row:span 1 !important;
+}
+.photo-tile.small{
+  grid-column:span 2 !important;
+  grid-row:span 1 !important;
+}
+.photo-cap{
+  left:5px !important;
+  right:5px !important;
+  bottom:4px !important;
+  padding:3px 6px !important;
+  font-size:10.5px !important;
+  line-height:1.15 !important;
+}
+.steps{
+  bottom:7px !important;
+  height:30px !important;
+  gap:5px !important;
+}
+.step-label{
+  font-size:11px !important;
+}
+.step-label span{
+  width:20px !important;
+  height:20px !important;
+  font-size:11px !important;
+}
+.final-message{
+  display:none !important;
+}
+.menu-link{
+  bottom:7px !important;
+  left:10px !important;
+  padding:7px 12px !important;
+  font-size:12px !important;
+}
+
 </style>
 </head>
 <body>
